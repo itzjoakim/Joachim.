@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="jo.ico" type="image/x-icon">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Joachim.</title>
+</head>
+<body>
+    <section class="container" id="header">
+        <nav>
+            <h1>Jo<span>achim</span>.</h1>
+            <ul class="nav-bar">
+                <a href="#header">Home</a>
+                <a href="#about">About</a>
+                <a href="#feeds">Feeds</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact" class="contact-a">Contact me</a>
+            </ul>
+            <svg class="menu" id="openMenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </nav>
+        <div id="sideBar">
+            <svg id="closeMenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+            </svg>
+            <ul class="nav-bar">
+                <a id="sectionId" href="#header">Home</a>
+                <a id="sectionId" href="#about">About</a>
+                <a id="sectionId" href="#feeds">Feeds</a>
+                <a id="sectionId" href="#services">Services</a>
+                <a id="" href="#portfolio">Portfolio</a>
+                <a id="sectionId" href="#contact" class="contact-a">Contact me</a>
+            </ul>
+        </div>
+        <div class="home">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Joachim</span><br><p>Paluk From D.R.Congo</p></h1>
+                <div>
+                    <p>
+                        <span>Web Designer.</span><br>
+                        I enjoy taking complex problems 
+                        and turning them into simple and beautiful interface designs. 
+                        I also love the logic and structure of coding and always strive to write
+                        elegant and efficient codes, whether in HTML.CSS or jQoery.
+                    </p>
+                    <div class="border"></div>
+                </div>
+                <a href="#about" class="see-more-about-me">See more about me</a>
+            </div>
+            <div class="header-img">
+                <img src="sideView.jpeg" alt="">
+                <img src="sideView.jpeg" alt="">
+                <img src="sideView.jpeg" alt="">
+            </div>    
+        </div>
+    </section>
+    <section class="container" id="about">
+        <h1 class="sub-title">About me</h1>
+        <span class="social-media-links">
+            <a href="https://www.facebook.com/itskim7" title="Check me up on facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                </svg>
+                <p>facebook</p>
+            </a>
+            <span>&middot;</span>
+            <a href="https://twitter.com/itz_joakim" title="Check me up on twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/>
+                </svg>
+                <p>twitter</p>
+            </a>
+            <span>&middot;</span>
+            <a href="https://www.instagram.com/itz.joakim?igsh=OGQ5ZDc2ODk2ZA==" title="Check me up on instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/>
+                </svg>
+                <p>instagram</p>
+            </a>
+        </span>
+        <div class="abt">
+            <div>
+                <div class="img-container">
+                    <img src="upView.JPG" alt="">
+                    <img class="active" src="upView.JPG" alt="">
+                    <img src="upView.JPG" alt="">
+                </div>
+            </div>
+            <div>
+                <p>
+                    Hello! I'm a 16-year-old Congolese enthusiast with a passion for programming. 
+                    I find joy and fulfillment in the world of coding, where I can bring my creative ideas to 
+                    life and explore the endless possibilities of technology. Whether it's crafting software 
+                    solutions or diving into the intricacies of web development, programming has become my 
+                    creative outlet and a gateway to endless learning. As a young mind in the vast landscape 
+                    of technology, I am eager to contribute, innovate, and continuously grow in the dynamic 
+                    world of programming. Join me on my journey as I navigate the fascinating realm of code 
+                    and strive to make a positive impact through my developing skills.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('awards')">Awards</p>
+                    <p class="tab-links"  onclick="opentab('acheivements')">Acheivements</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-end Development</span><br>HTML, CSS and JavaScript.</li>
+                        <hr>
+                        <li><span>Web Design</span><br>Designing websites.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Computer Science (IGCSE)</span><br>Cambridge IGCSE O'level Computer Science.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>No experience yet.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="awards">
+                    <ul>
+                        <li>No awards yet.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="acheivements">
+                    <ul>
+                        <li>No acheivements yet.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="feeds">
+        <h1>Feeds</h1>
+        <p class="intro">See my latest contents online. <span>Youtube</span>, <span>Instagram</span> or <span>Tiktok</span>.</p>
+        <div>
+            <span><p>No feed available.</p></span>
+        </div>
+    </section>
+    <section class="container" id="services">
+        <h1>Services</h1>
+        <p class="intro">Take a look on services that I offer. I'm <span>capable</span> to <span>serve</span> you with <span>this</span>.</p>
+        <div class="services-list">
+            <div class="service">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+                </svg>
+                <h1>Web Design</h1>
+                <p>
+                    Web design refers to the process of creating and planning the visual 
+                    aesthetics and user experience of a website. It encompasses a combination 
+                    of artistic and technical skills to design and structure the layout, color 
+                    scheme, typography, and overall appearance of a website.
+                    Effective web design not only focuses on creating an aesthetically pleasing 
+                    and visually engaging interface but also prioritizes user accessibility and 
+                    functionality. It involves understanding user behavior, employing responsive 
+                    design principles for compatibility across various devices, and optimizing 
+                    for performance. 
+                    <br><br> 
+                    Web designers as I use a variety of tools, including graphic 
+                    design software and coding languages such as HTML and CSS, to bring their 
+                    creative concepts to life on the internet. Ultimately, web design plays 
+                    a crucial role in shaping how users interact with and perceive a website, 
+                    contributing to a positive and seamless online experience.
+                </p>
+            </div>
+            <div class="service">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z"/>
+                </svg>
+                <h1>Portfolio</h1>
+                <p>
+                    A professional portfolio is a curated collection of an individual's work, 
+                    accomplishments, and credentials, presenting a comprehensive overview of 
+                    their skills and expertise. It typically includes a resume or curriculum 
+                    vitae, showcasing educational background, work experience, and qualifications. 
+                    Work samples, projects, and testimonials are integral components, providing 
+                    tangible evidence of the individual's capabilities. This dynamic tool serves 
+                    as a visual representation of professional growth, offering a holistic 
+                    perspective for potential employers or clients.
+                    <br><br>
+                    In essence, a professional portfolio is a strategic compilation, demonstrating 
+                    the breadth and depth of an individual's abilities. It goes beyond a 
+                    traditional resume by providing concrete examples of past work, fostering 
+                    credibility and aiding in career advancement or project opportunities.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="portfolio">
+        <h1>Portfolio</h1>
+        <p class="intro">Check out what I have done so far. Here are my <span>projects</span>.</p>
+        <div class="folio">
+            <div class="img-folio">
+                <img src="portfolioImg.jpg" alt="">
+            </div>
+            <div class="abt-folio-cont">
+                <div class="abt-folio">
+                    <h1>Joachim.</h1>
+                    <p>
+                        Here, you can explore a collection of my services, projects, skills, experiences, 
+                        education, and achievements. As you navigate through my portfolio, you'll gain insights 
+                        into the diverse range of projects I've undertaken and the skills I've honed over the years. 
+                        Whether you're seeking a skilled professional for a project or considering a collaborative 
+                        opportunity, you'll find detailed information about my background and capabilities.
+                    </p>
+                    <div class="buttons">
+                        <a href="index.html">View website</a>
+                        <a href="#contact">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">P</div>
+            <div class="slide">O</div>
+            <div class="slide">R</div>
+            <div class="slide">T</div>
+            <div class="slide">F</div>
+            <div class="slide">O</div>
+            <div class="slide">L</div>
+            <div class="slide">I</div>
+            <div class="slide">O</div>
+            <div class="slide">&middot;</div>
+
+            <div class="slide">P</div>
+            <div class="slide">O</div>
+            <div class="slide">R</div>
+            <div class="slide">T</div>
+            <div class="slide">F</div>
+            <div class="slide">O</div>
+            <div class="slide">L</div>
+            <div class="slide">I</div>
+            <div class="slide">O</div>
+            <div class="slide">&middot;</div>
+        </div>    
+    </section>
+    <section class="container" id="contact">
+        <h1>Contact me</h1>
+        <p class="intro">Reach out to me here. Get in <span>touch</span></p>
+        <div class="mail-box">
+            <form id="emailForm">
+                <input type="text" name="Name" id="contactName" placeholder="Your Name" required>
+                <input type="email" name="Email" id="contactEmail" placeholder="Your Email" required>
+                <textarea name="Message" rows="7" id="contactMessage" placeholder="Your Message"></textarea>
+                <span class="sentmsg" id="sentSuccessful">Email Sent successfully</span>
+                <span class="sentmsg" id="sentError">Error sending email. Please try again.</span>    
+                <button type="submit" class="submit-btn"><p id="sbmt">Submit</p><p id="sbmtLoad">Sennding...</p></button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>Joachim.</h2>
+            <a href="https://www.joachimpaluk@gmail.com" class="email-address">joachimpaluk@gmail.com</a>
+        </div>
+        <hr>
+        <div class="cprght">
+            <div class="sm-links">
+                <a href="https://www.facebook.com/itskim7" title="Check me up on facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/itz_joakim" title="Check me up on twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/itz.joakim?igsh=OGQ5ZDc2ODk2ZA==" title="Check me up on instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/>
+                    </svg>
+                </a>    
+            </div>
+            <p class="copyright">copyright © <span>Joachim P.K</span> | 2024. All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+        var openMenu = document.querySelector('#openMenu');
+        var closeMenu = document.querySelector('#closeMenu');
+        var sideBar = document.querySelector('#sideBar');
+        var sectionIds = document.querySelectorAll('#sectionId');
+
+        openMenu.onclick = () => {
+            sideBar.style.right = 0;
+        }
+
+        closeMenu.onclick = () => {
+            sideBar.style.right = '-202px';
+        }
+
+        sectionIds.forEach(sectionId = () => {
+            sectionId.onclick = () =>{
+                sideBar.style.right = 0;
+            }
+        })
+
+
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active"); 
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+        
+            emailjs.init("apEvgzkP1kURsx3yH");
+        
+            var templateParams = {
+                contactName: document.getElementById('contactName').value,
+                contactEmail: document.getElementById('contactEmail').value,
+                contactMessage: document.getElementById('contactMessage').value
+            };
+        
+            var serviceID = "service_439o18m";
+            var templateID = "template_fgqibjh";
+            var nameInput = document.getElementById("contactName");
+            var emailInput = document.getElementById("contactEmail");
+            var messageTextarea = document.getElementById("contactMessage");
+            var sbmt = document.getElementById("sbmt");
+            var sbmtLoad = document.getElementById("sbmtLoad");   
+            
+            
+
+            sbmt.style.display = 'none';
+            sbmtLoad.style.display = 'block';
+
+
+        
+            emailjs.send(serviceID, templateID, templateParams)
+                .then(function(response) {
+                    document.getElementById("sentSuccessful").style.display = "block";
+                    nameInput.value = "";
+                    emailInput.value = "";
+                    messageTextarea.value = "";
+                    sbmt.style.display = 'block';
+                    sbmtLoad.style.display = 'none';
+                }, function(error) {
+                    document.getElementById("sentError").style.display = "block";
+                    sbmt.style.display = 'block';
+                    sbmtLoad.style.display = 'none';
+                });
+
+                setTimeout(function(response) {
+                    document.getElementById("sentSuccessful").style.display = "none";
+                }, 5000);
+
+                setTimeout(function(error) {
+                    document.getElementById("sentError").style.display = "none";
+                }, 5000);
+
+                
+
+        });
+    </script>
+</body>
+</html>
