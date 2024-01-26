@@ -138,7 +138,7 @@ nav ul a::before{
     height: 3px;
     width: 0px;
     border-radius: 3px;
-    transition: .15s;
+    transition: .3s;
     background: var(--text-color);
 }
 
@@ -149,16 +149,16 @@ nav ul a::after{
     height: 3px;
     width: 0px;
     border-radius: 3px;
-    transition: .07s;
+    transition: .3s;
     background: var(--text-color);
 }
 
 nav ul a:hover::before{
-    width: 15px;
+    width: 50%;
 }
 
 nav ul a:hover::after{
-    width: 4px;
+    width: 25%;
 }
 
 nav svg{
@@ -199,6 +199,16 @@ nav svg:hover{
 
 .home .header-text h1 span{
     color: var(--primary-color);
+}
+
+.home .header-text h1 p{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.home .header-text #tempHeaderText{
+    display: none;
 }
 
 .home .header-text > div{
@@ -277,30 +287,134 @@ nav svg:hover{
     flex-direction: column;
 }
 
-.home .header-img img{
+.home .header-img > div{
+    position: relative;
     border-radius: 50%;
-    object-fit: cover;
 }
 
-.home .header-img img:nth-child(1){
+.home .header-img > div:nth-child(1){
     height: 200px;
     width: 200px;
 }
 
-.home .header-img img:nth-child(2){
+.home .header-img > div:nth-child(2){
     height: 120px;
     width: 120px;
     margin-left: 200px;
-    padding: 5px;
-    border: 2px solid rgb(255, 206, 116);
 }
 
-.home .header-img img:nth-child(3){
+.home .header-img > div:nth-child(3){
     height: 80px;
     width: 80px;
     margin-left: 100px;
-    padding: 5px;
-    border: 3px solid rgb(255, 206, 116);
+}
+
+.home .header-img > div img{
+    position: absolute;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home .header-img > div > div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid orange;
+    animation: rotate 5s linear infinite;
+}
+
+.home .header-img > div:nth-child(2) > div{
+    animation: rotateBack 5s linear infinite;
+}
+
+.home .header-img > div > div span{
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 100px;
+    background: var(--bg-color);
+}
+
+.home .header-img > div:nth-child(2) > div span{
+    width: 75px;
+}
+
+.home .header-img > div:nth-child(3) > div span{
+    width: 50px;
+}
+
+.home .header-img > div > div span::before{
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 11px;
+    height: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: orange;
+}
+
+.home .header-img > div > div span::after{
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: 11px;
+    height: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: orange;
+}
+
+.home .header-img > div:nth-child(3) > div span::before{
+    top: 7px;
+}
+
+.home .header-img > div:nth-child(3) > div span::after{
+    top: 7px;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateBack {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 
 .social-media-links{
@@ -451,6 +565,7 @@ nav svg:hover{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    color: #555;
 }
 
 .tab-contents ul li span{
@@ -458,8 +573,27 @@ nav svg:hover{
 }
 
 .tab-contents ul hr{
+    width: 100%;
+    height: 2px;
+    position: relative;
+    overflow: visible;
     outline: none;
-    border: 1px solid var(--bg-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 246, 229);
+}
+
+.tab-contents ul hr::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgb(255, 246, 229);
+
 }
 
 .tab-contents{
@@ -531,6 +665,93 @@ nav svg:hover{
     margin-bottom: 5px;
 }
 
+.services-list .service .service-body{
+    position: relative;
+    height: 100%;
+    margin: 20px 0 30px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-list .service .service-body::before{
+    content: '';
+    position: absolute;
+    left: 0.5px;
+    top: -10px;
+    transform: translateX(calc(-50% + 1px));
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: orange;
+}
+
+.services-list .service .service-body::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    height: calc(100% + 20px);
+    width: 3px;
+    border-radius: 5px;
+    background: orange;
+}
+
+.services-list .service .service-body span{
+    color: #555;
+    font-size: 12px;
+}
+
+.services-list .service .buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.services-list .service .buttons a{
+    position: relative;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 10px 15px;
+    width: 100px;
+    outline: 0;
+    border: 0;
+    transition: .15s;
+    cursor: pointer;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: orange;
+}
+
+.services-list .service .buttons a::before{
+    position: absolute;
+    content: '';
+    top: -15px;
+    left: 0;
+    height: 3px;
+    width: 85%;
+    border-radius: 3px;
+    background: orange;
+}
+
+.services-list .service .buttons a::after{
+    position: absolute;
+    content: '';
+    top: -18px;
+    right: 0;
+    aspect-ratio: 1/1;
+    width: 10%;
+    border-radius: 50%;
+    background: orange;
+}
+
 .folio{
     width: 75%;
     padding: 10px;
@@ -544,6 +765,34 @@ nav svg:hover{
     box-shadow: 1px 1px 2px rgb(255, 240, 222), -1px -1px 2px rgb(255, 240, 222);
 }
 
+.folio:hover  div .abt-folio h1{
+    color: orange;
+}
+
+.folio:hover .txt-folio::before,
+.folio:hover .txt-folio::after,
+.folio:hover .buttons a:first-child,
+.folio:hover div .buttons a:nth-child(1)::before,
+.folio:hover div .buttons a:nth-child(1)::after{
+        background: var(--primary-color);
+}
+
+.folio.reflexion{
+display: none;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.folio.reflexion::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, transparent, var(--bg-color));
+}
+
 .folio > div{
     width: calc(50% - 10px);
     gap: 30px;
@@ -552,7 +801,7 @@ nav svg:hover{
 
 .folio > div img{
     width: 100%;
-    aspect-ratio: 1/1;
+    height: 100%;
     overflow: hidden;
     object-fit: cover;
     border-radius: 5px;
@@ -571,42 +820,115 @@ nav svg:hover{
     align-items: start;
     justify-content: center;
     gap: 30px;
+    margin: 30px 0;
+}
+
+.folio > div .abt-folio h1{
+    transition: .15s;
+}
+
+.folio > div .txt-folio{
+    position: relative;
 }
 
 .folio > div p{
     max-width: 350px;
+    color: #555;
+    font-size: 12px;
+}
+
+.folio > div .txt-folio::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -15px;
+    transform: translateX(calc(-50% + 1px));
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    transition: .15s;
+    background: var(--text-color);
+}
+
+.folio > div .txt-folio::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    height: calc(100% + 30px);
+    width: 3px;
+    border-radius: 5px;
+    transition: .15s;
+    background: var(--text-color);
+}
+
+.folio > div .txt-folio p{
+    max-width: 330px;
+    color: #555;
+    font-size: 12px;
+    margin-left: 20px;
 }
 
 .folio > div .buttons{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
 .folio > div .buttons a{
+    position: relative;
     color: var(--white-color);
     text-decoration: none;
     font-weight: normal;
     padding: 10px 15px;
     outline: 0;
     border: 0;
-    border-radius: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     transition: .15s;
     cursor: pointer;
     background: var(--text-color);
 }
 
+.folio > div .buttons a:nth-child(1)::before{
+    position: absolute;
+    content: '';
+    top: -15px;
+    left: 0;
+    height: 3px;
+    width: 90%;
+    border-radius: 5px;
+    transition: .15s;
+    background: var(--text-color);
+}
+
+.folio > div .buttons a:nth-child(1)::after{
+    position: absolute;
+    content: '';
+    top: -18px;
+    right: 0;
+    aspect-ratio: 1/1;
+    width: 7%;
+    border-radius: 50%;
+    transition: .15s;
+    background: var(--text-color);
+}
+
 .folio > div .buttons a:nth-child(2){
     color: var(--text-color);
+    border-radius: 10px;
     background: var(--white-color);
     border: 2px solid rgb(255, 246, 229);
     box-shadow: 1px 1px 2px rgb(255, 240, 222), -1px -1px 2px rgb(255, 240, 222);
 }
 
-.folio > div .buttons button:nth-child(2):hover{
-    box-shadow: 1px 1px 2px rgb(255, 235, 212), -1px -1px 2px rgb(255, 235, 212);
+.folio > div .buttons a:nth-child(2):hover{
+    box-shadow: 1px 1px 2px rgb(255, 215, 168), -1px -1px 2px rgb(255, 235, 212);
 }
 
 .slider{
@@ -770,9 +1092,40 @@ footer{
 }
 
 footer hr{
+    width: calc(100% + 20px);
+    height: 2px;
+    margin: 5px 0 10px;
+    margin-left: -10px;
+    position: relative;
+    overflow: visible;
     outline: none;
-    margin: 10px 0;
-    border: 1px solid var(--bg-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 246, 229);
+}
+
+footer hr::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgb(255, 246, 229);
+
+}
+
+footer hr::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgb(255, 246, 229);
+
 }
 
 footer > div{
@@ -785,6 +1138,21 @@ footer > div{
 footer > div a{
     color: var(--text-color);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div a:hover svg{
+    transform: translateY(-3px);
+}
+
+footer > div a svg{
+    height: 18px;
+    aspect-ratio: 1/1;
+    margin-right: 10px;
+    transition: .15s;
+    fill: var(--primary-color);
 }
 
 footer > div .sm-links{
@@ -811,10 +1179,6 @@ footer > div .sm-links a svg{
     aspect-ratio: 1/1;
     margin-right: 5px;
     transition: .15s;
-    fill: var(--primary-color);
-}
-
-footer > div .sm-links a:hover svg{
     fill: var(--primary-color);
 }
 
@@ -917,7 +1281,7 @@ footer > div .copyright span{
         margin: 30px;
     }    
 
-    .folio > div p{
+    .folio > div .txt-folio p{
         max-width: 100%;
     }
     
@@ -1046,10 +1410,6 @@ footer > div .copyright span{
     }
     
 
-    .home .header-text h1 p{
-        display: none;
-    }
-
     .home .header-text > div .border{
         top: 20px;
         left: 20px;
@@ -1093,7 +1453,11 @@ footer > div .copyright span{
     #feeds > div{
         font-size: 14px;
         height: 200px;
-    }    
+    }   
+    
+    .mail-box form{
+        align-items: start;
+    }
 
     footer{
         width: calc(100% - 50px);
@@ -1116,6 +1480,14 @@ footer > div .copyright span{
     .container:not(#header){
         padding: 50px 10px;
     } 
+
+    .home .header-text h1 p{
+        display: none;
+    }
+
+    .home .header-text #tempHeaderText{
+        display: block;
+    }
 
     .container .intro{
         margin: 5px 0 20px;
